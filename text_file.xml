@@ -14,14 +14,14 @@
      </urls>  
      <inputs>  
        <key id="url" type="xs:string" paramType="variable" required="true" />  
-		<key id="content-Type" type="xs:string" paramType="variable" required="false" />
+		<key id="cType" type="xs:string" paramType="variable" required="false" />
      </inputs>  
        <execute><![CDATA[ 
-			if (!content-Type) {
-				content-Type = "text/html";
+			if (!cType) {
+				cType = "text/html";
 				}
               var text = y.rest(url)
-			  .header('content-Type:',content-Type)
+			  .header('content-Type:',cType)
               .get().response; 
               response.object = text;
 
