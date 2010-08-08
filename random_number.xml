@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <table xmlns="http://query.yahooapis.com/v1/schema/table.xsd">
     <meta>
-        <author>Paul Daniel</author>
+        <author>Paul Daniel (hapdaniel)</author>
+		<description>Generate a random number given
+		a highest possible number (max)</decription>
         <documentationURL></documentationURL>
     </meta>
     <bindings>
