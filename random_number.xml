@@ -16,7 +16,6 @@
 
             <execute><![CDATA[
             var rand_no = Math.ceil(max*Math.random());
-			//y.log('random is ' + rand_no);
             response.object = <num>{rand_no}</num>
             ]]>
             </execute>
