@@ -2,7 +2,7 @@
 <table xmlns="http://query.yahooapis.com/v1/schema/table.xsd">
     <meta>
         <author>Paul Daniel (hapdaniel)</author>
-        <documentationURL></documentationURL>
+        <documentationURL>http://pipes.yahoo.com/pipes/pipe.edit?_id=9befade0fdcb2eb3b59aef14cbecf5d0</documentationURL>
 		<description>Sum of specified elements over items. Returns all data, so
 		it keeps the original items.
 		I think these must be top level elements e.g. no fig.sum.
