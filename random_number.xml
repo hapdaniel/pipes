@@ -3,7 +3,7 @@
     <meta>
         <author>Paul Daniel (hapdaniel)</author>
 		<description>Generate a random number given
-		a highest possible number (max)</decription>
+		a highest possible number (max)</description>
         <documentationURL></documentationURL>
     </meta>
     <bindings>
