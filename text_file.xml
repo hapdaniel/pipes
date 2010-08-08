@@ -21,7 +21,7 @@
 				charset = "UTF-8";
 				}
               var text = y.rest(url)
-			  .header('Accept-Charset',charset)
+			  .header('Accept-Charset:',charset)
               .get().response; 
               response.object = text;
 
