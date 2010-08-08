@@ -14,15 +14,14 @@
      </urls>  
      <inputs>  
        <key id="url" type="xs:string" paramType="variable" required="true" />  
-		<key id="cType" type="xs:string" paramType="variable" required="false" />
+		<key id="charset" type="xs:string" paramType="variable" required="false" />
      </inputs>  
        <execute><![CDATA[ 
-			if (!cType) {
-				cType = "text/html";
+			if (!charset) {
+				charset = "UTF-8";
 				}
               var text = y.rest(url)
-			  .header('content-Type:',cType)
-			  .forceCharset('iso-8859-7')
+			  .forceCharset(charset)
               .get().response; 
               response.object = text;
 
