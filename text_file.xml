@@ -22,6 +22,7 @@
 				}
               var text = y.rest(url)
 			  .header('content-Type:',cType)
+			  .forceCharset('iso-8859-7')
               .get().response; 
               response.object = text;
 
