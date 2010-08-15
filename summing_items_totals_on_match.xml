@@ -22,6 +22,7 @@
             var arr_len = fields.length;
             var sums = new Array();
             var totals = new Object;
+			var output = new Object;
 			item=0;
 			for (var i = 0; i < arr_len; i++) {
              totals[fields[i]] = 0;
@@ -56,7 +57,7 @@
              
             //totals.yql_count = pdata.items.length;
             //pdata.items.push(totals);
-            var output = sums;
+            output = sums;
             response.object = output;
             ]]>
             </execute>
