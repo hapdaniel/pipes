@@ -29,7 +29,7 @@
 			 
             var pdata = JSON.parse(data);
             
-			match_key = pdata.items[0].yql_match;
+			var match_key = pdata.items[0].yql_match;
 			
             for (var j = 0; j < pdata.items.length; j++) {
               if (pdata.items[j].yql_match == match_key) {
