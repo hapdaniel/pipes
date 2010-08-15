@@ -52,6 +52,7 @@
 				
 			  }
             }
+			}
              
             //totals.yql_count = pdata.items.length;
             //pdata.items.push(totals);
