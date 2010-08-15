@@ -41,7 +41,7 @@
                 }
             totals.yql_count = pdata.items.length;
             pdata.items.push(totals);
-            var output = JSON.stringify(pdata.items[pdata.items.length-1]);
+            var output = pdata.items[pdata.items.length-1];
             response.object = output;
             ]]>
             </execute>
