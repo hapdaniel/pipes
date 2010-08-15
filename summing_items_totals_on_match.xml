@@ -26,7 +26,7 @@
 			for (var i = 0; i < arr_len; i++) {
              totals[item,fields[i]] = 0;
              }
-			totals[item,yql_match] = "";
+			totals[item,"yql_match"] = "";
 			 
             var pdata = JSON.parse(data);
             
