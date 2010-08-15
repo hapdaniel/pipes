@@ -20,13 +20,13 @@
 
             var fields = eles.split(",");
             var arr_len = fields.length;
-            
+            var sums = new Array();
             var totals = new Object;
 			item=0;
 			for (var i = 0; i < arr_len; i++) {
-             totals[item,fields[i]] = 0;
+             totals[fields[i]] = 0;
              }
-			totals[item,"yql_match"] = "";
+			totals["yql_match"] = "";
 			 
             var pdata = JSON.parse(data);
             
@@ -36,23 +36,26 @@
               if (pdata.items[j].yql_match == match_key) {
 			  for (var i = 0; i < arr_len; i++) {
                      ele = "pdata.items[" + j + "]." + fields[i];
-                     totals[item,fields[i]] += Number(eval(ele)); 
+                     totals[fields[i]] += Number(eval(ele)); 
 
                 }}
 			  else {
-			    totals[item,"yql_match"] = match_key;
+			    totals["yql_match"] = match_key;
 				match_key = pdata.item[j].yql_match;
 				for (var i = 0; i < arr_len; i++) {
-                  totals[item,fields[i]] = totals[item,fields[i]].toString(); 
+                  totals[fields[i]] = totals[fields[i]].toString(); 
 
                 }
-				item = item + 1;
+				sums.push(totals);
+				for (var i = 0; i < arr_len; i++) {
+                  totals[fields[i]] = 0; 
+				
 			  }
             }
              
             //totals.yql_count = pdata.items.length;
-            pdata.items.push(totals);
-            var output = pdata.items[pdata.items.length-1];
+            //pdata.items.push(totals);
+            var output = sums;
             response.object = output;
             ]]>
             </execute>
