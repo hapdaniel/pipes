@@ -41,7 +41,7 @@
                 }}
 			  else {
 			    totals["yql_match"] = match_key;
-				match_key = pdata.item[j].yql_match;
+				match_key = pdata.items[j].yql_match;
 				for (var i = 0; i < arr_len; i++) {
                   totals[fields[i]] = totals[fields[i]].toString(); 
 
