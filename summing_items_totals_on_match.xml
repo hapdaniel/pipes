@@ -57,8 +57,8 @@
              
             //totals.yql_count = pdata.items.length;
             //pdata.items.push(totals);
-            output = JSON.stringify(sums);
-            response.object = output;
+            //output = JSON.stringify(sums);
+            response.object = <stuff>{sums}</stuff>;
             ]]>
             </execute>
         </select>
