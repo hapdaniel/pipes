@@ -59,7 +59,7 @@
             //pdata.items.push(totals);
             //output = JSON.stringify(sums);
 			y.log(sums.toString);
-            response.object = sums;
+            response.object = JSON.parse(sums);
             ]]>
             </execute>
         </select>
