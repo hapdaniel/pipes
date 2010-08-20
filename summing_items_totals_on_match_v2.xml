@@ -6,7 +6,7 @@
         <documentationURL></documentationURL>
     </meta>
     <bindings>
-        <select itemPath="" produces="XML">
+        <select itemPath="" produces="JSON">
             <urls>
                 <url></url>
             </urls>
