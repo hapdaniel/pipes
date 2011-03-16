@@ -15,7 +15,7 @@
             </inputs>
 
             <execute><![CDATA[
-			y.include("http://hapdaniel.pwp.blueyonder.co.uk/pdaniel/yql/json2.js");
+			y.include("https://github.com/yql/yql-tables/raw/master/javascript/json2.js");
 			
             var pdata = JSON.parse(data);
             for (var i = 0; i < pdata.items.length; i++) {
