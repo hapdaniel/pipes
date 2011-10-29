@@ -21,7 +21,7 @@
             var thing = new Object;
 			var users = new Array();  
 			 var cursor = '-1';
-			 var url= 'http://twitter.com/statuses/' + type + '/' + user + '.xml?cursor=';
+			 var url= 'http://api.twitter.com/1/statuses/' + type + '/' + user + '.xml?cursor=';
 			 
             
             for (var j = 1; j <= max_pages; j++) {
